@@ -1,0 +1,56 @@
+<h1>課程申請</h1>
+
+<p>
+  <label for="name">姓名</label>
+  <input type="text" name="n" id="name">
+</p>
+<p>
+  <label for="studentid">學號</label>
+  <input type="text" name="s" id="studentid">
+</p>
+<p>
+  <label for="dept">系級</label>
+  <input type="text" name="d" id="dept">
+</p>
+
+<p>性別</p>
+<ul>
+  <li>
+    <input type="checkbox" name="gender"
+     id="m" value="男">
+    <label for="m">male</label>
+  </li>
+  <li>
+    <input type="checkbox" name="gender"
+     id="f" value="女">
+    <label for="f">female</label>
+  </li>
+</ul>
+
+<p>
+  <label>生日</label>
+  <input type="date" id="birth_dt" name="birth_dt" required>
+</p>
+
+<div>
+  <label>Email:</label>
+<input type="email" id="email_addr" name="email_addr">
+<br>
+<label>Repeat Email Address:</label>
+<input type="email" id="email_addr_repeat" name="email_addr_repeat" oninput="check(this)">
+
+<script>
+function check(input) {
+  if (input.value != document.getElementById('email_addr').value) {
+    input.setCustomValidity('The two email addresses must match.');
+  } else {
+    // input is valid -- reset the error message
+    input.setCustomValidity('');
+  }
+}
+</script>
+</div>
+
+<br>
+<input type="submit" value="送出">
+
