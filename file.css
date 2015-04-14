@@ -1,115 +1,141 @@
-h1{
-  font: 24pt/1.5 monospace;
-  font-family: sans-serif;
-  color: #27a9e1;
-  font-weight: bold;
-  margin: 10 px;
-  padding: 10 px;
-  background: #e6e7e8;
-  height: 50 px;
-}
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>課程詳細資料</title>
+    <link rel="stylesheet" type="text/css" href="file.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.github.com/necolas/normalize.css/master/normalize.css">
+    <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+<header>
+  <h1>課程</h1>
+</header>
 
-h2{
-  font: 16pt/1.5 monospace;
-  font-family: sans-serif;
-  color: #2e3092;
-  margin: 1 em;
-  padding: 1 em;
-  height: 50 px;
-  line-height: 2;
-  display: inline-block;
-}
+<body>
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a data-toggle="tab" href="#home">基本資訊</a></li>
+  <li><a data-toggle="tab" href="#target">課程目標</a></li>
+  <li><a data-toggle="tab" href="#syllabus">上課進度</a></li>
+    <li><a data-toggle="tab" href="#score">評分標準</a></li>
+  <li><a data-toggle="tab" href="#others">其他</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="home">
 
-h3{
-  font: 14pt/1.5 monospace;
-  font-family: sans-serif;
-  color: #1b75bb;
-  margin: 10 px;
-  padding: 1 em;
-  height: 50 px;
-}
+  <article>
+  <h2>學年/學期&nbsp;Academic&nbsp;Year/Semester</h2>
+    <p>
+    103&nbsp;學年&nbsp;第&nbsp;2&nbsp;學期
+    </p>
+  <h2>課程名稱&nbsp;Course&nbsp;Name</h2>
+    <p>
+      <ul>
+      <li>781007-001</li>
+      <li>(中 Ch.)Ｗeb程式設計</li>
+      <li>(英 Eng.)Web Programming</li>
+      </ul>
+    </p>
+  <h2>授課教師&nbsp;Instructo</h2>
+    <p>
+    余能豪
+    </p>
+  <h2>修別&nbsp;Type&nbsp;of&nbsp;Credit</h2>
+    <p>
+    群修
+    </p>
+  <h2>學分數No.&nbsp;of&nbsp;Credits</h2>
+    <p>
+    3.0
+    </p>
+  <h2>備註&nbsp;Note</h2>
+    <p>
+    限學程同學方得修習。
+    </p>
+  </div>
+  <div class="tab-pane" id="target">
+      <h2>課程目標&nbsp;Course&nbsp;objectives</h2>
+    <p>
+    本課程旨在介紹WWW的基本運作原理並以其為平台開發應用程式，包含HTML5/CSS3動態網頁製作、網頁物件模型(DOM)、JavaScript程式設計與雲端應用等。
+    </p>
+      <h2>課程大綱&nbsp;Course&nbsp;Description</h2>
+    <p>
+    本課程涵蓋網路平台之最新技術如HTML5, CSS3, Javascript, JSON, JQuery等，並介紹國內外網站及網路行銷活動範例，培養學生網頁應用程式之開發能力及資訊架構設計能力，最後能設計兼具功能與美感的動態網站。
+    </p>
+  </div>
+  <div class="tab-pane" id="syllabus">
+      <h2>上課進度&nbsp;Class&nbsp;Schedule</h2>
+    <p>
+      <ol>
+      <li>Course&nbsp;Introduction&nbsp;/Git</li>
+      <li>HTML5</li>
+      <li>CSS3&nbsp;(I)</li>
+      <li>CSS3&nbsp;(II)</li>
+      <li>IA&nbsp;-&nbsp;Analysis </li>
+      <li>Grid&nbsp;system&nbsp;/&nbsp;bootstrap</li>
+      <li>IA&nbsp;presentation</li>
+      <li>Responsive&nbsp;design</li>
+      <li>Midterm</li>
+      <li>Javascript&nbsp;(I)&nbsp;/&nbsp;DOM </li>
+      <li>Javascript&nbsp;(II)&nbsp;/&nbsp;JQuery</li>
+      <li>Parse&nbsp;/&nbsp;JSON</li>
+      <li>校慶運動會</li>
+      <li>Heroku&nbsp;/&nbsp;Node.js</li>
+      <li>Websocket&nbsp;</li>
+      <li>Guest&nbsp;speaker</li>
+      <li>Google&nbsp;Analytics</li>
+      <li>Final&nbsp;demo</li>
+      </ol>
+    </p>
+  </div>
+  <div class="tab-pane" id="score">
+      <h2>課程要求/評分標準&nbsp;Course&nbsp;requirements/Grading&nbsp;standards</h2>
+    <p>
+    課堂作業(35%) 、期中作業(20%)及期末實作成品成果展示(30%) 
+    </p>
+  </div>
+    <div class="tab-pane" id="others">
+      <h4><img src="http://cis.nccu.edu.tw/CourseMap/Students/static/images/title_01.jpg" alt="核心能力分析圖"></h4>
+  <div>
+  <h3>能力項目說明</h3>
+  <ul>
+    <li>具備發現與解決問題之能力</li>
+    <li>具備敘事與美學能力</li>
+    <li>具備科技研發與系統開發能力</li>
+    <li>具備團隊合作力</li>
+    <li>具備人文關懷與社會參與情操 </li>
+    <li>具備企劃整合與溝通能力 </li>
+  </ul>
+  <h4><img src="http://cis.nccu.edu.tw/CourseMap/Students/static/images/title.jpg" alt="授課方式比例圖"></h4>  
+      <h2>參考書目&nbsp;Textbook&nbsp;&&nbsp;references</h2>
+    <p>
+      <ul>
+      <li>Eric&nbsp;Freeman,&nbsp;Elisabeth&nbsp;Robson(2011),&nbsp;Head&nbsp;First&nbsp;HTML5&nbsp;Programming:&nbsp;Building&nbsp;Web&nbsp;Apps&nbsp;with&nbsp;JavaScript,&nbsp;O'Reilly</li>
+      <li>Crockford&nbsp;Douglas,&nbsp;JavaScript:&nbsp;The&nbsp;Good&nbsp;Parts,&nbsp;O'Reilly</li>
+      </ul>
+    </p>
+  <h2>本課程附件&nbsp;Course&nbsp;attachments</h2>
+    <p>
+    N/A
+    </p>
+  </div>
+</div>
+ 
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+</body>
 
-p, ol, ul{
-  font: 12pt/1.5 monospace;
-  font-family: sans-serif;
-  color: #231f20;
-  margin: 10 px;
-  padding: 1 em;
-  height: 50 px;
-  line-height: 1.2;
-}
-
-
-div {
-  font: 12pt/1.5 monospace;
-  font-family: sans-serif;
-  color: #231f20;
-  margin: 10 px;
-  padding: 1 em;
-  height: 50 px;
-  line-height: 1.2;
-}
-
-#wrap {
-    width: 800px;
-    margin: 0 auto;
-}
-
-section {
-    width: 600px;
-    float: left;
-}
-
-aside{
-    width: 200px;
-    float: right;
-}
-
-
-
-
-a:link{
-  text-decoration: none;
-  font: 14pt/1.5 monospace;
-  color: #f05a28;
-  font-family: sans-serif;
-}
-a:visited{
-  color: #fbaf3f;
-  font-family: sans-serif;
-}
-a:hover{
-  color: #f7931d;
-  font-family: sans-serif;
-}
-a:active{
-  color: #f05a28;
-  font-family: sans-serif;
-}
-
-input[type=text]{
-  border: 1.5px solid black;
-  background: gray;
-}
-
-input[type=date]{
-  border: 1.5px solid black;
-  background: gray;
-}
-
-input[type=email]{
-  border: 1.5px solid black;
-  background: gray;
-}
-
-.btn-inverse{
-  font-size: 16px;
-  padding: 0.5em 1em;
-  outline: 0;
-}
-.btn-inverse{
-  background: #333;
-  color: #ccc;
-}
+<aside>
+</aside>
+  
+<footer>
+    <a href="hw1_1.html">課程申請表單</a>
+  </footer>
 
 
