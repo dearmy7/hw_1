@@ -1,5 +1,5 @@
 h1{
-  font: 24pt/1.5 monospace;
+  font: 24 pt/1.5 monospace;
   font-family: sans-serif;
   color: #27a9e1;
   font-weight: bold;
@@ -10,7 +10,7 @@ h1{
 }
 
 h2{
-  font: 16pt/1.5 monospace;
+  font: 16 pt/1.5 monospace;
   font-family: sans-serif;
   color: #2e3092;
   margin: 1 em;
@@ -21,7 +21,7 @@ h2{
 }
 
 h3{
-  font: 14pt/1.5 monospace;
+  font: 14 pt/1.5 monospace;
   font-family: sans-serif;
   color: #1b75bb;
   margin: 10 px;
@@ -30,7 +30,7 @@ h3{
 }
 
 p, ol, ul{
-  font: 12pt/1.5 monospace;
+  font: 12 pt/1.5 monospace;
   font-family: sans-serif;
   color: #231f20;
   margin: 10 px;
@@ -41,7 +41,7 @@ p, ol, ul{
 
 
 div {
-  font: 12pt/1.5 monospace;
+  font: 12 pt/1.5 monospace;
   font-family: sans-serif;
   color: #231f20;
   margin: 10 px;
@@ -52,17 +52,17 @@ div {
 
 
 body {
-    width: 600px;
+    width: 600 px;
     float: left;
 }
 
 aside{
-    width: 200px;
+    width: 200 px;
     float: right;
 }
 
 footer{
-  width:600px;
+  width:600 px;
   float:left;
 }
 
@@ -71,7 +71,7 @@ footer{
 
 a:link{
   text-decoration: none;
-  font: 14pt/1.5 monospace;
+  font: 14 pt/1.5 monospace;
   color: #f05a28;
   font-family: sans-serif;
 }
@@ -89,23 +89,23 @@ a:active{
 }
 
 input[type=text]{
-  border: 1.5px solid black;
+  border: 1.5 px solid black;
   background: gray;
 }
 
 input[type=date]{
-  border: 1.5px solid black;
+  border: 1.5 px solid black;
   background: gray;
 }
 
 input[type=email]{
-  border: 1.5px solid black;
+  border: 1.5 px solid black;
   background: gray;
 }
 
 .btn-inverse{
-  font-size: 16px;
-  padding: 0.5em 1em;
+  font-size: 16 px;
+  padding: 0.5 em 1 em;
   outline: 0;
 }
 .btn-inverse{
