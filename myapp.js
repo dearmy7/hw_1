@@ -68,6 +68,57 @@ var weatherInfo = data.query.results.channel.item,
  var  day3lo = weatherInfo.forecast[3].low;
      $('.day3low').text(day3lo);
 
+var weatehrcode = weatherInfo.item.forecast[0].code;
+          switch(weathercode){
+            case 32:
+            case 34:
+            case 36:
+            skycons.set( "today", Skycons.CLEAR_DAY);
+            break;
+            case 31:
+            case 33:
+            skycons.set( "today", Skycons.CLEAR_NIGHT);
+            break;
+            case 29:
+            case 27:
+            skycons.set( "today", Skycons.PARTLY_CLOUDY_NIGHT);
+            break;
+            case 30:
+            case 28:
+            case 44:
+            skycons.set( "today", Skycons.PARTLY_CLOUDY_DAY);
+            break;
+            case 26:
+            skycons.set( "today", Skycons.CLOUDY);
+            break;
+            case 11:
+            case 12:
+            case 40:
+            case 5:
+            case 6:
+            case 10:
+            skycons.set( "today", Skycons.RAIN);
+            break;
+            case 18:
+            skycons.set( "today", Skycons.SLEET);
+            break;
+            case 16:
+            case 7:
+            case 13:
+            case 14:
+            case 1:
+            case 42:
+            case 43:
+            case 46:
+            skycons.set( "today", Skycons.SNOW);
+            break;
+            case 24:
+            skycons.set( "today", Skycons.WIND);
+            break;
+            case 20:
+            skycons.set( "today", Skycons.FOG);
+            break;
+          }
 
          }});
  
