@@ -15,10 +15,6 @@
       console.log('document ready');
         var role = Parse.User.current().get("role");
         }
-        if(role == "student"){
-            alert("Sorry, permission denied");
-            window.location = 'index.html';  
-        },
         if(role == "teacher"){
           var attendantList = Parse.Object.extend("AttendantList");
           var query = new Parse.Query(attendantList);
@@ -36,7 +32,7 @@
             });
         },
         else{
-            alert("Please login first");
+            alert("Sorry, permission denied");
             window.location = 'logIn.html';
             return null ;
 
