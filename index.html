@@ -21,7 +21,7 @@
           }else{
           window.location = "logIn.html";
           } 
-
+/*用Parse.User.current()判斷登入狀態，如果不等於null的話就叫出parse資料中的role以及username來顯示。其他的狀況就轉址到login頁面*/
         if (Parse.User.current() != null){
           var role = Parse.User.current().get("role");
           var username = Parse.User.current().get("username");
